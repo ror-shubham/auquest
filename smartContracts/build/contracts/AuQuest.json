@@ -1,0 +1,80 @@
+{
+  "contract_name": "AuQuest",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_unitAddress",
+          "type": "address"
+        },
+        {
+          "name": "_karat",
+          "type": "uint256"
+        },
+        {
+          "name": "_unitName",
+          "type": "bytes32"
+        },
+        {
+          "name": "_description",
+          "type": "bytes32"
+        },
+        {
+          "name": "_issuer",
+          "type": "address"
+        }
+      ],
+      "name": "Verify",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_unitAddress",
+          "type": "address"
+        },
+        {
+          "name": "_karat",
+          "type": "uint256"
+        },
+        {
+          "name": "_unitName",
+          "type": "bytes32"
+        },
+        {
+          "name": "_description",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Mark",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b61023d8061001f6000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663595fcbff81146100485780637f21be9e1461009a575b600080fd5b341561005357600080fd5b61008673ffffffffffffffffffffffffffffffffffffffff600435811690602435906044359060643590608435166100e3565b604051901515815260200160405180910390f35b34156100a557600080fd5b61008673ffffffffffffffffffffffffffffffffffffffff600435166024356044356064356101a7565b604051901515815260200160405180910390f35b73ffffffffffffffffffffffffffffffffffffffff808616600090815260208190526040812060038101549192909181169084161480156101245750805486145b80156101575750846040519081526020016040519081900390206001820154604051908152602001604051908190039020145b801561018a5750836040519081526020016040519081900390206002820154604051908152602001604051908190039020145b15610198576001915061019d565b600091505b5095945050505050565b73ffffffffffffffffffffffffffffffffffffffff848116600090815260208190526040902084815560018082018590556002820184905560038201805473ffffffffffffffffffffffffffffffffffffffff191633909416939093179092555b509493505050505600a165627a7a72305820c7a7a22ada83fe2d4964792e399bcb198f05d79816fd2b7ecadc4f118c466a700029",
+  "networks": {
+    "1507362064790": {
+      "events": {},
+      "links": {},
+      "address": "0xea7dae3d85de3f178923c3d236701e74ea25acb1",
+      "updated_at": 1507362148674
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1507362148674
+}
