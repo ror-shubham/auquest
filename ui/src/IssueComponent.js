@@ -36,7 +36,7 @@ class VerifyComponent extends Component {
 	}
 
 	componentDidMount() {
-     	window.addEventListener('DOMContentLoaded', function() {
+     	window.addEventListener('load', function() {
 	     	let web3 = window.web3
 	     	// Checking if Web3 has been injected by the browser (Mist/MetaMask)
 	        if (typeof web3 !== 'undefined') {
@@ -49,9 +49,15 @@ class VerifyComponent extends Component {
 	            alert("please install MetaMask extension")
 	     	}
         	contract = new window.web3.eth.Contract(BlockContractABI,BlockContractAddress);
+        	let defaultAccount = window.web3.eth.defaultAccount
          }
          )
-     	this.setState({thisAddress:window.web3.eth.defaultAccount})
+     	window.onload =() => {
+        	console.log(window.web3.eth.getAccounts().then( result=>
+        		this.setState({'thisAddress':result[0]})
+        	))
+        	
+        }
     }
 
 	handleChangeText = (e) => {
